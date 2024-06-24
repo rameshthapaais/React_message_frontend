@@ -1,0 +1,1 @@
+export const BaseUrl = "https://django-project-fawn-five.vercel.app/"
