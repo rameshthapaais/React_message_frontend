@@ -4,6 +4,7 @@ import Nabbar from './Components/Navbar';
 import ChatRoom from './Components/ChatRoom';
 import Home from './Components/Home';
 import NumberSumUp from './Components/NumberSumUp';
+import Login from './Components/Login';
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home/>} />  
         <Route path="/chatrooms" element={<ChatRoom/>} />
         <Route path="/sum_num" element={<NumberSumUp/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>         
       <br />
       
