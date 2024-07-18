@@ -5,22 +5,36 @@ import ChatRoom from './Components/ChatRoom';
 import Home from './Components/Home';
 import NumberSumUp from './Components/NumberSumUp';
 import Login from './Components/Login';
+import Dashboard from './Components/Dashboard';
+import Register from './Components/Register';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <Nabbar/>
+      <Nabbar />
       <Routes>
-        <Route path="/" element={<Home/>} />  
-        <Route path="/chatrooms" element={<ChatRoom/>} />
-        <Route path="/sum_num" element={<NumberSumUp/>} />
-        <Route path="/login" element={<Login/>} />
-      </Routes>         
+        <Route path="/" element={<Home />} />
+        <Route path="/chatrooms" element={<ChatRoom />} />
+        <Route path="/sum_num" element={<NumberSumUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={
+
+
+          <Dashboard />
+
+
+        } />
+
+        <Route path='/register' element={<Register />} />
+      </Routes>
       <br />
-      
-      <button className="btn btn-primary">Click me</button>
+
+      <br />
+
+
     </div>
   );
 }
