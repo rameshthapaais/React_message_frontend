@@ -44,6 +44,7 @@ function Register(props) {
             maxBodyLength: Infinity,
             url: BaseUrl+ 'chat/register/',
             headers: {
+                'Authorization': 'token d3e8f543f7ac7c114c62b9cf91952119c6e12d15', 
                 'Content-Type': 'application/json'
             },
             data: data
