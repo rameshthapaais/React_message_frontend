@@ -67,13 +67,13 @@ function ChatRoom() {
         />
         
         <p>
-        <button type="submit">Create Chat Room</button>
+        <button id="chat_btn" type="submit">Create Chat Room</button>
         
         </p>
       </form>
       <ul>
         {chatrooms.map((room) => (
-          <li key={room.id}>{room.name}</li>
+          <li id={room.id} key={room.id}>{room.name}</li>
         ))}
       </ul>
     </div>
